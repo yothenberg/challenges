@@ -47,6 +47,7 @@ class TestGame(unittest.TestCase):
         self.assertRaises(ValueError, _validation, word, draw)
         word = 'GARETTA'
         self.assertRaises(ValueError, _validation, word, draw)
+        self.assertEqual(draw, list('garytev'.upper()))
 
 if __name__ == "__main__":
    unittest.main() 
